@@ -1,30 +1,39 @@
 <template>
   <div class="pantalla-principal">
-    <img class="image" alt="Image" src="image-2.png" />
-    <img class="img" alt="Image" src="image-1.png" />
-    <header class="header">
-      <div class="text-wrapper">K’ peliculon</div>
-      <img class="icon-user-avatar" alt="Icon user avatar" src="icon-user-avatar.png" />
-      <img class="icon-menu" alt="Icon menu" src="icon-menu.png" />
+    <img class="imagen" alt="Imagen" src="" />
+    <img class="imagen" alt="Imagen" src="" />
+    <header class="encabezado">
+      <div class="texto-envoltura">K' peliculon</div>
+      <img class="imagenUrl" alt="Icono usuario avatar" src="./icons/user.png" />
+      <img class="icono-menu" alt="Icono menu" src="https://cdn-icons-png.flaticon.com/128/2976/2976215.png" />
       <div class="div">Películas</div>
-      <div class="text-wrapper-2">Inicio</div>
-      <div class="text-wrapper-3">Géneros</div>
-      <img class="icon-chevron-down" alt="Icon chevron down" src="icon-chevron-down.png" />
-      <img class="icon-chevron-down-2" alt="Icon chevron down" src="image.png" />
+      <div class="texto-envoltura-2">Inicio</div>
+      <div class="texto-envoltura-3">Géneros</div>
+      <img class="icono-chevron-abajo" alt="Icono chevron abajo" src="https://www.flaticon.es/icono-gratis/flecha-hacia-abajo-para-navegar_32195" />
+      <img class="icono-chevron-abajo-2" alt="Icono chevron abajo" src="https://www.flaticon.es/icono-gratis/flecha-hacia-abajo-para-navegar_32195" />
     </header>
-    <img class="image-2" alt="Image" src="image-3.png" />
-    <img class="image-3" alt="Image" src="image-4.png" />
-    <img class="image-4" alt="Image" src="image-5.png" />
-    <img class="image-5" alt="Image" src="image-6.png" />
-    <img class="image-6" alt="Image" src="image-9.png" />
-    <img class="image-7" alt="Image" src="image-11.png" />
+    <img class="peli1" alt="Imagen" src="https://media.themoviedb.org/t/p/w220_and_h330_face/6Dc9mMl083cVpNknWzALCw7JYPH.jpg" />
+    <img class="peli2" alt="Imagen" src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/ApiEfzSkrqS4m1L5a2GwWXzIiAs.jpg" />
+    <img class="peli3" alt="Imagen" src="https://media.themoviedb.org/t/p/w220_and_h330_face/zS8BSQdbOesql0EWbs17kPvLoAT.jpg" />
+    <img class="peli4" alt="Imagen" src="https://media.themoviedb.org/t/p/w220_and_h330_face/diEeiB2DmZZadHISkg24RO2n0rT.jpg" />
+    <img class="peli5" alt="Imagen" src="https://media.themoviedb.org/t/p/w220_and_h330_face/mm1M6CoN2qLy8BpnrmYEVToQHJR.jpg" />
+    <img class="peli6" alt="Imagen" src="https://media.themoviedb.org/t/p/w220_and_h330_face/iLa15KURiosRmvtWP6vKqBT11Le.jpg" />
+
   </div>
 </template>
 
 <script>
 export default {
-  name: "PantallaPrincipal",
+  name: "TheWelcome",
+
+  data() {
+    return {
+      // La ruta relativa de la imagen desde el componente
+      imagenUrl: require('@/assets/user.png')
+    };
+  }
 };
+
 </script>
 
 <style>
